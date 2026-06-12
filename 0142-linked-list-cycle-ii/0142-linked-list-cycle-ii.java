@@ -17,6 +17,7 @@ public class Solution {
             slow=slow.next;
             fast=fast.next.next;
             if(slow==fast){
+                // break;
                 slow= head;
             while(slow != fast){
              slow = slow.next;
@@ -25,6 +26,12 @@ public class Solution {
         return slow;
             }
         }
+        // slow= head;
+        // while (slow!= fast){
+        //     slow= slow.next;
+        //     fast= fast.next;
+        //      if(slow==fast) return slow;
+        // }
 return null;
     }
 }
