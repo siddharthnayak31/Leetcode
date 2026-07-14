@@ -6,10 +6,13 @@ class Solution {
         for (int num : nums) {
             if (count == 0) {
                 candidate = num;
+                count++; //wrongggg [6,5,5]
             }
-            count += (num == candidate) ? 1 : -1;
+            else if(num==candidate) count++ ; 
+            else count-- ;
+            //OR->short:    count += (num == candidate) ? 1 : -1;
         }
-
+        
         return candidate;
     }
 }
